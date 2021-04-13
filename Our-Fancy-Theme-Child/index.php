@@ -20,8 +20,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <?php if ( is_front_page() && is_home() ) : ?>
-	<?php get_template_part( 'global-templates/hero' ); ?>
+<!-- Our New Feature Banner -->
+<div class="w-100 bg-primary p-5">
+	<div class="container">
+	  <div class="row">
+	    <div class="col-sm-6">
+	      <img src="../img/homebanner.png" alt="">
+	    </div>
+			<div class="col-sm-1-12">
+			  <h1>Website Hosting</h1>
+				<h2>Fast, Reliable & Secure Hosting for your Websites</h2>
+				<p>UK based website hosting, backed up by our award-winning customer support team.</p>
+				<a href="#options" class="btn btn-go px-3 text-bold">View Packages</a>
+			</div>
+	  </div>
+	</div>
+</div>
 <?php endif; ?>
+
 
 <div class="wrapper" id="index-wrapper">
 
